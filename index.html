@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport"
+            content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible"
+            content="ie=edge">
+      <title>Technical Documentation Page</title>
+      <link rel="shortcut icon"
+            href="favicon.ico"
+            type="image/x-icon">
+      <link rel="icon"
+            href="favicon.ico"
+            type="image/x-icon">
+      <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css"
+            rel="stylesheet"> -->
+      <!-- <link href="https://cdn.jsdelivr.net/npm/bulma-extensions@2.2.1/bulma-pricingtable/dist/css/bulma-pricingtable.min.css"
+            rel="stylesheet"> -->
+      <link href="styles.css"
+            rel="stylesheet">
+      <script defer
+              src="https://use.fontawesome.com/releases/v5.1.0/js/all.js"></script>
+</head>
+
+<body>
+      <nav id="navbar">
+            <header>GO Doc</header>
+            <ul>
+                  <a class="nav-link"
+                     href="#Introducción"
+                     rel="internal">
+                        <li>Introducción</li>
+                  </a>
+
+                  <a class="nav-link"
+                     href="#Características"
+                     rel="internal">
+                        <li>Características</li>
+                  </a>
+
+                  <a class="nav-link"
+                     href="#Hola_Mundo"
+                     rel="internal">
+                        <li>Hola Mundo</li>
+                  </a>
+
+                  <a class="nav-link"
+                     href="#Variables"
+                     rel="internal">
+                        <li>Variables</li>
+                  </a>
+
+                  <a class="nav-link"
+                     href="#Declaración_de_Variables"
+                     rel="internal">
+                        <li>Declaración de Variables</li>
+                  </a>
+
+                  <a class="nav-link"
+                     href="#Constantes"
+                     rel="internal">
+                        <li>Constantes</li>
+                  </a>
+
+                  <a class="nav-link"
+                     href="#Tipos"
+                     rel="internal">
+                        <li>Tipos</li>
+                  </a>
+
+                  <a class="nav-link"
+                     href="#Sistema_de_Paquetes"
+                     rel="internal">
+                        <li>Sistema de Paquetes</li>
+                  </a>
+
+
+
+            </ul>
+
+      </nav>
+
+      <main id="main-doc">
+
+            <section id="Introducción"
+                     class="main-section">
+                  <header>Introducción</header>
+                  <article>
+                        <p> El lenguaje de programación Go es un proyecto de
+                              código abierto para hacer programadores más
+                              productivos.
+                        </p>
+
+                        <p> Go es expresivo, conciso, limpio y eficiente. Sus
+                              mecanismos de concurrencia facilitan la escritura
+                              de programas consiguiendo lo mejor de máquinas
+                              multinúcleo y de la red, mientras su novel
+                              sistema
+                              de tipos permite la construcción de programas
+                              flexibles y modulares.
+                        </p>
+
+                        <p> Go compila rápidamente a código máquina aún con la
+                              comodidad de la recolección de basura y el
+                              poder de reflexión en tiempo de ejecución. Es un
+                              lenguaje tipado estáticamente, compilado y
+                              por lo tanto rápido, que se siente como un
+                              lenguaje interpretado y tipado dinámicamente.
+                        </p>
+                  </article>
+
+
+            </section>
+
+            <section id="Características"
+                     class="main-section">
+                  <header>Características</header>
+                  <article>
+                        <li>Go usa una sintaxis parecida a C, por lo que los
+                              programadores que hayan usado dicho lenguaje
+                              se sienten muy cómodos con él.</li>
+                        <li>Go usa tipado estático (statically typed) y es tan
+                              eficiente como C.</li>
+                        <li> Go tiene muchas de las características y facilidad
+                              de lenguajes dinámicos como Python</li>
+                        <li>Aún siendo un lenguaje diseñado para la
+                              programación de sistemas, provee de un recolector
+                              de
+                              basura, reflexión y otras capacidades de alto
+                              nivel que lo convierten en un lenguaje muy
+                              potente.</li>
+                        <li>Go admite el paradigma de programación orientada a
+                              objetos, pero a diferencia de los lenguajes
+                              de programación más populares no dispone de
+                              herencia de tipos y tampoco de palabras clave que
+                              denoten claramente que soporta este paradigma.
+                              Otro detalle que puede resultar confuso es que
+                              la definición de un tipo ("clase") se realiza por
+                              medio de declaraciones separadas (interfaces,
+                              structs, embedded values). Go permite el uso de
+                              delegación (a través de embedded values) y
+                              polimorfismo (por medio de interfaces).</li>
+
+                  </article>
+            </section>
+
+            <section id="Hola_Mundo"
+                     class="main-section">
+                  <header>Hola Mundo</header>
+                  <article>
+                        <p>Para comenzar a escribir código Go, abra un editor
+                              de texto y escriba su primer código Go "Hola
+                              mundo":</p>
+                        <code>package main<br>
+                              import "fmt"<br>
+                              func main() {<br>
+                              fmt.Printf("hola, mundo\n")<br>
+                              }<br>
+                        </code>
+
+                  </article>
+            </section>
+            <section id="Variables"
+                     class="main-section">
+                  <header>Variables</header>
+                  <article>
+                        <p>Las variables en GO tienen algunas características
+                              dentro de las que podemos mencionar algunas:</p>
+
+                        <li>Los tipos de datos son estáticos, es decir
+                              que una variable no puede cambiar su tipo
+                              de dato durante su ciclo de vida.</li>
+                        <li>Los tipos de datos básicos en GO se pueden
+                              encontrar en el siguiente link:
+                              https://golang.org/ref/spec#Types</li>
+                        <li>Los valores iniciales, de las variables a las
+                              cuales no se les ha asignado ningún valor,
+                              son asignados a su valor “zero”. Es decir:
+                              Los tipos numéricos inician en 0, los tipos
+                              string inician en vacio “”, los tipos
+                              boolean inician en falso, los campos de los
+                              tipos struct inician en su valor “zero”,
+                              los demás tipos inician en nil (nulo).</li>
+
+
+                  </article>
+            </section>
+            <section id="Declaración_de_Variables"
+                     class="main-section">
+                  <header>Declaración de Variables</header>
+                  <article>
+                        <p>La estructura de la declaración de una variable es
+                              la siguiente:</p>
+                        <code>var nombre tipo = expresión</code>
+
+                        <p>Inicia con la palabra reservada var, luego el nombre
+                              de
+                              la variable, luego el tipo de dato que vamos a
+                              utilizar, seguido del operador de asignación “=”
+                              y por
+                              último la expresión a asignar a la variable. Sin
+                              embargo, la expresión es opcional y el tipo de
+                              dato es
+                              opcional si se declara la expresión, pero no se
+                              pueden
+                              omitir el tipo y la expresión al tiempo.</p>
+
+                        <p>También es posible asignar un grupo de variables con
+                              una sola palabra reservada var, y este grupo debe
+                              ser
+                              encerrado entre paréntesis. A esta declaración se
+                              le
+                              conoce como declaración múltiple de variables.</p>
+                        <code>var ( <br>
+                              nombre tipo<br>
+                              nombre2 tipo<br>
+                              nombre3 tipo<br>
+                              )</code>
+                        También se puede asignandole valores directamente
+                        <code>
+                              var ( <br>
+                              a = 1<br>
+                              b = “hola”<br>
+                              c = true<br>
+                              )
+                        </code>
+
+                  </article>
+            </section>
+
+            <section id="Constantes"
+                     class="main-section">
+                  <header>Constantes</header>
+                  <article>Go también tiene soporte para constantes. <br>
+                        <p>Las constantes son básicamente variables cuyos
+                              valores
+                              no se pueden cambiar más adelante. Se crean de la
+                              misma
+                              manera que creas variables, pero en lugar de usar
+                              la
+                              palabra reservada var usamos la palabra reservada
+                              const:</p>
+                        <code>
+                              paquete main<br>
+
+                              import "fmt"<br>
+
+                              func main () {<br>
+                              const x string = "Hello World"<br>
+                              fmt.Println (x)<br>
+                              }<br>
+                        </code>
+                  </article>
+            </section>
+
+            <section id="Tipos"
+                     class="main-section">
+                  <header>Tipos</header>
+                  <article>
+                        <p>Go tiene varios tipos incorporados, incluidos los
+                              numéricos ( byte , int64 , float32 , etc.),
+                              booleanos y cadenas de caracteres ( cadena ). Las
+                              cuerdas son inmutables; Los operadores integrados
+                              y las palabras clave (en lugar de las funciones)
+                              proporcionan concatenación, comparación y
+                              codificación / decodificación UTF-8 .Los
+                              tipos de estrcutura se pueden definir con la
+                              palabra clave struct . </p>
+
+                  </article>
+            </section>
+            <section id="Sistema_de_Paquetes"
+                     class="main-section">
+                  <header>Sistema de Paquetes</header>
+                  <article>
+                        <p>En el sistema de paquetes de Go, cada paquete tiene
+                              una ruta (por ejemplo, "compress/bzip2" o
+                              "golang.org/x/net/html") y un nombre
+                              (por ejemplo, bzip2o html)
+                              . Las referencias a las definiciones de otros
+                              paquetes siempre deben ir precedidas con el
+                              nombre del otro paquete, y solo
+                              los nombres en mayúsculas de otros paquetes son
+                              accesibles: io.Readeres público pero
+                              bzip2.reader no lo es. El comando go get puede
+                              recuperar paquetes almacenados en un repositorio
+                              remoto como GitHub , y se recomienda a los
+                              desarrolladores que desarrollen paquetes dentro
+                              de una ruta base correspondiente a un repositorio
+                              de origen
+                              <strong>(como github.com/user_name/package_name)</strong>
+                              para reducir la probabilidad de colisión de
+                              nombres con futuras adiciones a la biblioteca
+                              estándar u otras bibliotecas externas.
+                              Existen propuestas para introducir una solución
+                              de administración de paquetes adecuada para Go
+                              similar al sistema de carga de Rust o al sistema
+                              npm de Node. </p>
+
+                  </article>
+            </section>
+            <!--   <section id=" "
+                     class="main-section">
+                  <header> </header>
+                  <article>
+
+                  </article>
+            </section>
+            <section id=" "
+                     class="main-section">
+                  <header> </header>
+                  <article>
+
+                  </article>
+            </section> -->
+
+      </main>
+
+
+
+
+
+
+
+      <!-- <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> -->
+</body>

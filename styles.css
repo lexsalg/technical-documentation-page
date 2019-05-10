@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css?family=Audiowide|Roboto|Exo');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  font-family: 'Roboto';
+}
+
+#main-doc,
+#navbar {
+  height: 100%;
+  overflow: auto;
+}
+
+code {
+  display: block;
+  text-align: left;
+}
