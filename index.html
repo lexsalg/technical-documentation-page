@@ -20,63 +20,70 @@
             rel="stylesheet"> -->
       <link href="styles.css"
             rel="stylesheet">
-      <script defer
-              src="https://use.fontawesome.com/releases/v5.1.0/js/all.js"></script>
+
+      <link rel="stylesheet"
+            href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+            integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+            crossorigin="anonymous">
+
 </head>
 
 <body>
       <nav id="navbar">
-            <header>GO Doc</header>
+            <header><img src="gopher.png" id="gopher"> GO Doc</header>
             <ul>
                   <a class="nav-link"
                      href="#Introducción"
                      rel="internal">
-                        <li>Introducción</li>
+                        <li><i class="fas fa-book"></i> Introducción</li>
                   </a>
 
                   <a class="nav-link"
                      href="#Características"
                      rel="internal">
-                        <li>Características</li>
+                        <li><i class="fas fa-box-open"></i> Características</li>
                   </a>
 
                   <a class="nav-link"
                      href="#Hola_Mundo"
                      rel="internal">
-                        <li>Hola Mundo</li>
+                        <li><i class="fas fa-globe-americas"></i> Hola Mundo
+                        </li>
                   </a>
 
                   <a class="nav-link"
                      href="#Variables"
                      rel="internal">
-                        <li>Variables</li>
+                        <li><i class="fas fa-cube"></i> Variables</li>
                   </a>
 
                   <a class="nav-link"
                      href="#Declaración_de_Variables"
                      rel="internal">
-                        <li>Declaración de Variables</li>
+                        <li><i class="fas fa-cubes"></i> Declaración de
+                              Variables</li>
                   </a>
 
                   <a class="nav-link"
                      href="#Constantes"
                      rel="internal">
-                        <li>Constantes</li>
+                        <li><i class="fas fa-terminal"></i> Constantes</li>
                   </a>
 
                   <a class="nav-link"
                      href="#Tipos"
                      rel="internal">
-                        <li>Tipos</li>
+                        <li><i class="fas fa-sort-numeric-down"></i> Tipos</li>
                   </a>
 
                   <a class="nav-link"
                      href="#Sistema_de_Paquetes"
                      rel="internal">
-                        <li>Sistema de Paquetes</li>
+                        <li><i class="fas fa-tools"></i> Sistema de Paquetes
+                        </li>
                   </a>
 
-
+                  <img src="gopher-doc.png" id="gopher-doc">
 
             </ul>
 
@@ -86,7 +93,7 @@
 
             <section id="Introducción"
                      class="main-section">
-                  <header>Introducción</header>
+                  <header><i class="fas fa-book"></i> Introducción</header>
                   <article>
                         <p> El lenguaje de programación Go es un proyecto de
                               código abierto para hacer programadores más
@@ -116,7 +123,8 @@
 
             <section id="Características"
                      class="main-section">
-                  <header>Características</header>
+                  <header><i class="fas fa-box-open"></i> Características
+                  </header>
                   <article>
                         <li>Go usa una sintaxis parecida a C, por lo que los
                               programadores que hayan usado dicho lenguaje
@@ -148,7 +156,8 @@
 
             <section id="Hola_Mundo"
                      class="main-section">
-                  <header>Hola Mundo</header>
+                  <header><i class="fas fa-globe-americas"></i> Hola Mundo
+                  </header>
                   <article>
                         <p>Para comenzar a escribir código Go, abra un editor
                               de texto y escriba su primer código Go "Hola
@@ -164,7 +173,7 @@
             </section>
             <section id="Variables"
                      class="main-section">
-                  <header>Variables</header>
+                  <header><i class="fas fa-cube"></i> Variables</header>
                   <article>
                         <p>Las variables en GO tienen algunas características
                               dentro de las que podemos mencionar algunas:</p>
@@ -189,7 +198,8 @@
             </section>
             <section id="Declaración_de_Variables"
                      class="main-section">
-                  <header>Declaración de Variables</header>
+                  <header><i class="fas fa-cubes"></i> Declaración de Variables
+                  </header>
                   <article>
                         <p>La estructura de la declaración de una variable es
                               la siguiente:</p>
@@ -232,7 +242,7 @@
 
             <section id="Constantes"
                      class="main-section">
-                  <header>Constantes</header>
+                  <header><i class="fas fa-terminal"></i> Constantes</header>
                   <article>Go también tiene soporte para constantes. <br>
                         <p>Las constantes son básicamente variables cuyos
                               valores
@@ -257,7 +267,8 @@
 
             <section id="Tipos"
                      class="main-section">
-                  <header>Tipos</header>
+                  <header><i class="fas fa-sort-numeric-down"></i> Tipos
+                  </header>
                   <article>
                         <p>Go tiene varios tipos incorporados, incluidos los
                               numéricos ( byte , int64 , float32 , etc.),
@@ -273,7 +284,8 @@
             </section>
             <section id="Sistema_de_Paquetes"
                      class="main-section">
-                  <header>Sistema de Paquetes</header>
+                  <header><i class="fas fa-tools"></i> Sistema de Paquetes
+                  </header>
                   <article>
                         <p>En el sistema de paquetes de Go, cada paquete tiene
                               una ruta (por ejemplo, "compress/bzip2" o
@@ -290,7 +302,8 @@
                               desarrolladores que desarrollen paquetes dentro
                               de una ruta base correspondiente a un repositorio
                               de origen
-                              <strong>(como github.com/user_name/package_name)</strong>
+                              <strong>(como
+                                    github.com/user_name/package_name)</strong>
                               para reducir la probabilidad de colisión de
                               nombres con futuras adiciones a la biblioteca
                               estándar u otras bibliotecas externas.
@@ -319,10 +332,6 @@
       </main>
 
 
-
-
-
-
-
-      <!-- <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> -->
+      <script
+              src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
